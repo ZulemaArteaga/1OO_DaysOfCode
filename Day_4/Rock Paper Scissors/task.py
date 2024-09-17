@@ -1,30 +1,9 @@
 import random
-rock = '''
-    _______
----'   ____)
-      (_____)
-      (_____)
-      (____)
----.__(___)
-'''
+import emoji
 
-paper = '''
-    _______
----'   ____)____
-          ______)
-          _______)
-         _______)
----.__________)
-'''
-
-scissors = '''
-    _______
----'   ____)____
-          ______)
-       __________)
-      (____)
----.__(___)
-'''
+rock = emoji.emojize(":raised_fist:")
+paper = emoji.emojize(":hand_with_fingers_splayed:")
+scissors = emoji.emojize(":victory_hand:")
 
 choices = [rock, paper, scissors]
 
@@ -35,7 +14,7 @@ while True:
         print("INVALID CHOICE, PLEASE TRY AGAIN")
         continue
     else:
-        print("Your choice is" + choices[int(player_choice)])
+        print("Your choice is " + choices[int(player_choice)])
     break
 
 computer_choice = random.choice(choices)
@@ -43,13 +22,10 @@ print("The computer choice is: " + computer_choice)
 
 # No winner
 if (choices[int(player_choice)]) == computer_choice: print("No winner. Try Again!")
-
 # Player is the winner
-if player_choice == "1" and computer_choice == rock: print("Congratulation, You Won!")
-if player_choice == "2" and computer_choice == paper: print("Congratulation, You Won!")
-if player_choice == "0" and computer_choice == scissors: print("Congratulation, You Won!")
-
-# Computer is the winner
-if player_choice == "1" and computer_choice == scissors: print("The Computer Won")
-if player_choice == "2" and computer_choice == rock: print("The Computer Won")
-if player_choice == "0" and computer_choice == paper: print("The Computer Won")
+elif (player_choice == "1" and computer_choice == rock or
+        player_choice == "2" and computer_choice == paper or
+        player_choice == "0" and computer_choice == scissors):
+    print("Congratulation, You Won!")
+# ELSE statement covers when the Computer wins
+else: print("The Computer Won")
