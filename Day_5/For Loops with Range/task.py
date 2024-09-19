@@ -10,8 +10,8 @@ and each pair has a sum of 101.
 for number in range (1,11):
     print(number) # This prints each number starting by 1 and ends at 10
 
-total_number = 0
-for number in range (1,101):
+total_number = 1
+for number in range (2,101):
     total_number += number # This line adds the current number to total_number. Ej 0+1=1, then 1+2=3, etc
 print(total_number)
 
@@ -24,8 +24,8 @@ Rules:
 '''
 for number in range(1,101):
     if number % 3 == 0 and number % 5 == 0: print("FizzBuzz")
-    elif number%3 == 0: print("Fizz")
-    elif number%5 == 0: print("Buzz")
+    elif number % 3 == 0: print("Fizz")
+    elif number % 5 == 0: print("Buzz")
     else: print(number)
     
 

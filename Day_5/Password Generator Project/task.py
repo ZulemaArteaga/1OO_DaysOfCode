@@ -21,16 +21,13 @@ while True:
 # EASY VERSION. Password with Pattern: First Letters then Symbols and last Numbers
 password = []
 for letter in range(nr_letters):
-    random_letters = random.choice(letters)
-    password.append(random_letters)
+    password.append(random.choice(letters))
 
 for symbol in range(nr_symbols):
-    random_symbols = random.choice(symbols)
-    password.append(random_symbols)
+    password.append(random.choice(symbols))
 
 for number in range(nr_numbers):
-    random_number = random.choice(numbers)
-    password.append(random_number)
+    password.append(random.choice(numbers))
 
 print("Your Password is: " + ''.join(password))
 print("This password follow a sequence: letter > symbols > numbers\n")
@@ -39,12 +36,8 @@ print("This password follow a sequence: letter > symbols > numbers\n")
 # HARD VERSION. Password does not follow a pattern
 password = []
 for each in range(nr_letters) and range(nr_symbols) and range(nr_numbers):
-    random_letters = random.choice(letters)
-    random_symbols = random.choice(symbols)
-    random_number = random.choice(numbers)
-    password.append(random_letters)
-    password.append(random_symbols)
-    password.append(random_number)
+    chars = random.choice(letters) + random.choice(symbols) + random.choice(numbers)
+    password.append(chars)
 
     random.shuffle(password)
 
