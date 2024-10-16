@@ -1,13 +1,13 @@
-''' Secret Auction Program
+""" Secret Auction Program
 Functionality:
 - Each person writes their name and bid.
 - The program asks if there are others who need to bid.
     If so, then the computer clears the output (prints several blank lines)
     then loops back to asking name and bid.
 - Each person's name and bid are saved to a dictionary.
-- Once all participants have placed their bid, the program works out who has the highest bid and prints it.'''
+- Once all participants have placed their bid, the program works out who has the highest bid and prints it."""
 
-def Secret_Auction_Game():
+def secret_auction_game():
     end_bids = False
     name_bid = {}
 
@@ -16,18 +16,16 @@ def Secret_Auction_Game():
         name = input("What is your name?\n").upper()
         if not name.isalpha():
             print("INVALID OPTION. Please enter a valid name with alphabet letters.")
-            continue # If invalid option, it will enter the loop again
+            continue # If the input is not a letter it will enter this loop again
 
         # Input: bid
-        while True:
-            try:
-                bid = int(input("What is your bid?\n$"))
-                break  # If int is given, will break this loop
-            except ValueError:
-                print("INVALID OPTION. Please enter a number.")
+        try:
+            bid = float(input("What is your bid?\n$"))
+        except ValueError:
+            print("INVALID OPTION. Please enter a number.")
+            continue # If the input is not a float-number it will enter this loop again
 
-        # Store the name and bid
-        name_bid[name] = bid
+        name_bid[name] = bid # Adds name and bid to dictionary if both inputs are valid
 
         # Input: More bidders
         while True:
@@ -57,4 +55,4 @@ def Secret_Auction_Game():
     else: # If only one winner, will print the winner name
         print(f'The winner is "{winners[0]}" with a bid of ${winning_bid_amount}.')
 
-Secret_Auction_Game()
+secret_auction_game()
