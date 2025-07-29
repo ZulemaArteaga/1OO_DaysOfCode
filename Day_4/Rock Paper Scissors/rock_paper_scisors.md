@@ -1,4 +1,4 @@
-# Treasure Island 
+# Rock, Paper, Scissors
 
 ## Table of Contents
 - [About](#about)
@@ -9,7 +9,7 @@
 - [Installation](#installation)
 
 ## About
-Treasure Island is a simple command-line game where you can play Rock, Paper, Scissors against the computer. It uses emojis to make the gameplay more fun and visually engaging.
+This is a simple Rock, Paper, Scissors game implemented in Python. It uses emojis to represent the choices and lets you play against the computer. The game continues to prompt you until you make a valid choice, then compares your pick against the computer’s to decide the winner.
 
 ## Features
 - Interactive Gameplay – Play directly in your terminal.
