@@ -26,7 +26,7 @@ This program simulates a secret auction where multiple participants submit their
 6. After all bids are submitted, the program announces the winner(s) and their winning bid amount.
 
 ## Example
-![auction.gif](auction.gif))
+![blind.gif](blind.gif))
 
 ## Requirements
 - Python 3.12.2 
