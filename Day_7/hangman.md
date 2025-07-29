@@ -1,4 +1,4 @@
-# Treasure Island 
+# hangman 
 
 ## Table of Contents
 - [About](#about)
