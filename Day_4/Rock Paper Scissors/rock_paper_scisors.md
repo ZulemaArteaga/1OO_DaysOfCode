@@ -29,8 +29,10 @@ This is a simple Rock, Paper, Scissors game implemented in Python. It uses emoji
 
 
 ## Requirements
-Python 3.12.2 intalled on your system.
+Python 3.12.2 intalled on your system. 
+
 ```pip install emoji```
+
 ```import random```
 
 ## Installation
