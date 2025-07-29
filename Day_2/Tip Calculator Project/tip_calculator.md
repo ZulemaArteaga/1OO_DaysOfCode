@@ -29,7 +29,7 @@ The Tip Calculator takes the total bill amount, desired tip percentage, and numb
 
 ## Example
 
-![tip_calculator.gif](../_resources/tip_calculator.gif)
+![tip_calculator.gif](tip_calculator.gif))
 
 
 ## Requirements
