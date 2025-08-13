@@ -33,7 +33,7 @@ The game presents two options, and the player chooses either **A** or **B**. If 
 6. Continue playing until you make a wrong guess.
 
 ## Example
-![higer_lower_project.gif](followers_game.gif)
+![higher_lower_project.gif](followers_game.gif)
 
 ## Requirements
 - Python 3.12.2 
